@@ -1,0 +1,15 @@
+<!-- Simple government-style emblem logo (SVG) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0" stop-color="#0b5ed7"/>
+      <stop offset="1" stop-color="#073b9a"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="18" fill="url(#g1)" />
+  <g transform="translate(20,20)" fill="#fff" opacity="0.98">
+    <circle cx="40" cy="28" r="8" />
+    <path d="M8 80c0-18 24-30 32-30s32 12 32 30H8z" />
+    <rect x="18" y="46" width="44" height="6" rx="3" />
+  </g>
+</svg>
