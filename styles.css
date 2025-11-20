@@ -1,0 +1,56 @@
+:root{
+  --bg:#071326;
+  --glass: rgba(255,255,255,0.04);
+  --glass-border: rgba(255,255,255,0.08);
+  --accent:#00f6ff;
+  --accent-2:#00d1ff;
+  --text:#e6f7ff;
+}
+*{box-sizing:border-box}
+html,body{height:100%;background:linear-gradient(180deg,#020617 0%, #071326 100%);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent)}
+.glass-card{background:var(--glass);border:1px solid var(--glass-border);backdrop-filter:blur(12px);border-radius:12px;color:var(--text)}
+.glass-nav{background:linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));backdrop-filter:blur(10px);box-shadow:0 6px 18px rgba(0,0,0,0.25);border-bottom:1px solid rgba(255,255,255,0.02)}
+.neon{color:var(--accent);text-shadow:0 0 8px rgba(0,246,255,0.12),0 0 24px rgba(0,209,255,0.06)}
+.hero{min-height:100vh;position:relative;overflow:hidden;padding-top:90px}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(120deg,#001129 0%, #042b43 50%, #001129 100%);filter:blur(30px);opacity:0.6;z-index:0}
+.hero-title{letter-spacing:0.06em}
+.hero-sub{color:#dff8ff}
+.floating-icons{position:absolute;inset:auto 0 40px 0;display:flex;gap:28px;justify-content:center;z-index:2;font-size:28px;opacity:0.9;animation:floaty 8s ease-in-out infinite}
+.floating-icons i{color:var(--accent);filter:drop-shadow(0 4px 18px rgba(0,214,255,0.12))}
+
+.shadow-glow{box-shadow:0 6px 30px rgba(0,214,255,0.06)}
+.bg-dark-section{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00))}
+.founder-img{width:80px;height:80px;border-radius:12px;border:1px solid rgba(255,255,255,0.06)}
+
+.preloader{position:fixed;inset:0;background:linear-gradient(180deg, rgba(2,6,23,0.8), rgba(7,19,38,0.8));display:flex;align-items:center;justify-content:center;z-index:9999}
+.preloader .loader svg{animation:spin 1.6s linear infinite}
+
+.floating-btn{position:fixed;border-radius:14px;padding:12px 14px;border:none;background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#001;box-shadow:0 8px 30px rgba(0,214,255,0.12);z-index:999}
+.theme-toggle{right:20px;bottom:20px}
+.back-top{left:20px;bottom:20px}
+
+/* Store floating button */
+.store-btn{right:20px;bottom:84px;background:linear-gradient(135deg,#00d1ff,#00ffa3);color:#002;}
+
+/* logo image in navbar */
+.logo-img{width:40px;height:auto;display:inline-block}
+.navbar-brand .brand-text{letter-spacing:0.04em}
+
+
+.footer{background:transparent;color:rgba(255,255,255,0.7);position:relative}
+.footer-wave svg{display:block;width:100%;height:56px}
+
+/* Video thumbnail hover */
+.video-thumb{position:relative;border-radius:12px;overflow:hidden}
+.video-thumb img{transition:transform .35s ease,filter .35s ease}
+.video-thumb:hover img{transform:scale(1.06);filter:drop-shadow(0 10px 30px rgba(0,214,255,0.12))}
+
+/* Modal glass content */
+.modal .glass-card{box-shadow:0 12px 40px rgba(2,6,23,0.6)}
+
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes floaty{0%{transform:translateY(0)}50%{transform:translateY(-18px)}100%{transform:translateY(0)}}
+
+/* small helpers */
+.text-muted{color:rgba(255,255,255,0.55)}

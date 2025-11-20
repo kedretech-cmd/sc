@@ -1,0 +1,55 @@
+{
+  "title":"ኬድሬ ቴክኖሎጂ ቻናል",
+  "nav_about":"ስለ ኛ",
+  "nav_videos":"ቪዲዮዎች",
+  "nav_tutorials":"መማር",
+  "nav_portfolio":"ፖርትፎሊዮ",
+  "nav_blog":"ብሎግ",
+  "nav_contact":"እውነተኛ እድር",
+  "hero_title":"ኬድሬ ቴክኖሎጂ ቻናል",
+  "hero_sub":"ተማር — ሠራ — ፈጠር — ኢኖቬት",
+  "btn_watch":"ቪዲዮ እይ",
+  "btn_subscribe":"ይመዝገቡ",
+  "about_title":"ስለ ኬድሬ ቴክ",
+  "about_desc":"የኬድሬ ቴክኖሎጂ ቻናል ተግባራዊ ትምህርቶች፣ ፕሮጀክቶችና ምክርን ይካፈላል።",
+  "founder_name":"ኬድሬ ሰማን",
+  "founder_role":"መለኪያ እና አስተማሪ",
+  "founder_bio":"አርታኢ፣ ኮንቴንት ፈጣሪ እና የኦፕንሶርስ ወኪል።",
+  "follow_title":"ይከተሉን",
+  "videos_title":"የቅርብ ጊዜ ቴክ ቪዲዮዎች",
+  "load_more":"እስኪ ይጨምሩ",
+  "tutorials_title":"መማሪያዎች",
+  "tutorials_explore":"ይመልከቱ",
+  "blog_title":"የቅርብ ጊዜ ጽሁፎች",
+  "contact_title":"እውነተኛ እድር",
+  "form_name":"ስም",
+  "form_email":"ኢሜይል",
+  "form_message":"መልዕክት",
+  "form_send":"መልዕክት ላክ",
+  "footer_privacy":"የግል ጥበቃ",
+  "footer_terms":"ውሎች",
+  "footer_madeby":"በኬድሬ ቴክ የተዘጋ" 
+  ,
+  "blog_posts": {
+    "b-001": {"title":"እንዴት ያማርኛ ይማሩ - የቅርብ መንገድ","excerpt":"HTML, CSS እና JavaScript በፕሮጀክት የተመረጡ መርሀግብሮች."},
+    "b-002": {"title":"Kivy መተግበሪያዎች: ከእንቅስቃሴ እስከ APK","excerpt":"Kivy መተግበሪያዎችን ለAndroid እንዴት እንደሚያዘጋጁ."},
+    "b-003": {"title":"ጽድቅ ያለው Termux & Kali መሠረታዊ መረዳዶች","excerpt":"Termux እና Kali ለጀማሪዎች እንዴት እንደሚሰሩ እና እርምጃ የሚወስዱበት እሴት."}
+  },
+  "tutorials_data": {
+    "t-web-1": {"title":"የድህረ ገጽ ልምድ - Bootstrap ማዕከል","excerpt":"Bootstrap ንጥረ ነገሮች በመጠቀም የሚተላለፉ ድህረ ገጾች ይሠሩ."},
+    "t-py-1": {"title":"Python & Kivy - ሞባይል መተግበሪያዎች","excerpt":"Python እና Kivy ማስተላለፊያ መተግበሪያዎችን ይፈጥሩ."}
+  },
+  "videos_list": {
+    "v1": {"title":"የድህረ ገጽ ማቀናበር በBootstrap","desc":"Bootstrap 5 በመጠቀም ስርዓተ መስመር ድህረ ገጽ ለማቀናበር መመሪያ."},
+    "v2": {"title":"Python Kivy ፕሮጀክት - እርስዎን እንዴት እንደሚያነሳ","desc":"Python እና Kivy ጋር የሚሰሩ ሞባይል መተግበሪያዎች."}
+  }
+  ,
+  "nav_store":"ሱቅ",
+  "store_title":"ኤሌክትሮኒክስ ሱቅ",
+  "store_all":"ሁሉም",
+  "store_phones":"ስልኮች",
+  "store_computers":"ኮምፒዩተሮች",
+  "order_call":"በስልክ ትደውሉ",
+  "order_sms":"SMS ይላኩ",
+  "order_copy":"ቁጥሩን ያጥፉ"
+}

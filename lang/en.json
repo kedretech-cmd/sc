@@ -1,0 +1,55 @@
+{
+  "title":"KEDRE TECHNOLOGY CHANNEL",
+  "nav_about":"About",
+  "nav_videos":"Videos",
+  "nav_tutorials":"Tutorials",
+  "nav_portfolio":"Portfolio",
+  "nav_blog":"Blog",
+  "nav_contact":"Contact",
+  "hero_title":"KEDRE TECHNOLOGY CHANNEL",
+  "hero_sub":"Learn — Build — Create — Innovate",
+  "btn_watch":"Watch Videos",
+  "btn_subscribe":"Subscribe",
+  "about_title":"About Kedre Tech",
+  "about_desc":"Kedre Technology Channel shares practical tutorials, projects and tips to help you Learn, Build and Innovate.",
+  "founder_name":"Kedre Seman",
+  "founder_role":"Founder & Educator",
+  "founder_bio":"Developer, content creator, and open-source enthusiast focused on practical projects and tutorials.",
+  "follow_title":"Follow",
+  "videos_title":"Latest Tech Videos",
+  "load_more":"Load More",
+  "tutorials_title":"Tutorials",
+  "tutorials_explore":"Explore",
+  "blog_title":"Latest Posts",
+  "contact_title":"Contact",
+  "form_name":"Name",
+  "form_email":"Email",
+  "form_message":"Message",
+  "form_send":"Send Message",
+  "footer_privacy":"Privacy",
+  "footer_terms":"Terms",
+  "footer_madeby":"Made with ❤️ by Kedre Tech"
+  ,
+  "blog_posts": {
+    "b-001": {"title":"How to Learn Web Development Fast (Practical Path)","excerpt":"A pragmatic, project-first roadmap to learn HTML, CSS and JavaScript quickly."},
+    "b-002": {"title":"Kivy Mobile Apps: From Idea to APK","excerpt":"Build and package Kivy apps for Android."},
+    "b-003": {"title":"Ethical Termux & Kali Basics for Beginners","excerpt":"Intro to Termux and Kali with ethics first."}
+  },
+  "tutorials_data": {
+    "t-web-1": {"title":"Web Development - Modern UI with Bootstrap","excerpt":"Build responsive, accessible websites using Bootstrap."},
+    "t-py-1": {"title":"Python & Kivy - Mobile Apps","excerpt":"Create cross-platform mobile apps with Python and Kivy."}
+  },
+  "videos_list": {
+    "v1": {"title":"Build a Modern Website with Bootstrap","desc":"Step-by-step guide to create a responsive modern website using Bootstrap 5."},
+    "v2": {"title":"Python Kivy Project - Step by Step","desc":"Create cross-platform mobile apps with Python and Kivy."}
+  }
+  ,
+  "nav_store":"Store",
+  "store_title":"Electronics Store",
+  "store_all":"All",
+  "store_phones":"Phones",
+  "store_computers":"Computers",
+  "order_call":"Call to order",
+  "order_sms":"Send SMS",
+  "order_copy":"Copy number"
+}

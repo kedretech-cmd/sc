@@ -1,0 +1,8 @@
+/* small responsive tweaks */
+@media (max-width:992px){
+  .hero-title{font-size:2rem}
+}
+@media (max-width:768px){
+  .floating-icons{display:none}
+  .glass-card{border-radius:10px}
+}
