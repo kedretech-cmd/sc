@@ -54,3 +54,23 @@ a{color:var(--accent)}
 
 /* small helpers */
 .text-muted{color:rgba(255,255,255,0.55)}
+
+/* Social Buttons Premium Styling */
+.social-btn {
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.02);
+  backdrop-filter: blur(4px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+.social-btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #001129;
+  box-shadow: 0 0 20px rgba(0,246,255,0.4);
+  transform: translateY(-4px) scale(1.05);
+}
+.social-btn:active {
+  transform: translateY(-1px) scale(0.98);
+}

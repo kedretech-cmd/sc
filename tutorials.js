@@ -17,7 +17,7 @@ const tutorialsData = [
     ],
     resources: [{label:'Lesson playlist', url:'#'},{label:'Starter repo', url:'#'}],
     thumb: 'assets/thumb.svg',
-    video: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+    videoId: 'W6NZfCO5SIk' // JavaScript Tutorial placeholder
   },
   {
     id: 't-py-1',
@@ -29,7 +29,7 @@ const tutorialsData = [
     lessons: ['Intro to Kivy','Layouts & Widgets','App logic','State & Storage','Packaging APKs','Publishing tips'],
     resources: [{label:'Kivy docs', url:'#'},{label:'Example app', url:'#'}],
     thumb: 'assets/project2.svg',
-    video: '#'
+    videoId: '_uQrJ0TkZlc' // Python Tutorial placeholder
   },
   {
     id: 't-cy-1',
@@ -41,12 +41,13 @@ const tutorialsData = [
     lessons: ['Termux setup','SSH & keys','Reconnaissance','Tools overview','Pen-testing basics'],
     resources: [{label:'Ethics & rules', url:'#'}],
     thumb: 'assets/project3.svg',
-    video: '#'
+    videoId: 'nzj7Wg4DAbs' // Cybersecurity placeholder
   }
 ];
 
 function renderTutorials(){
   const grid = document.getElementById('tutorialGrid');
+  if(!grid) return;
   grid.innerHTML = '';
   tutorialsData.forEach(t=>{
     const col = document.createElement('div'); col.className='col-md-4';
@@ -60,7 +61,7 @@ function renderTutorials(){
             <div class="mb-2"><strong>Duration:</strong> ${t.duration} • <strong>Level:</strong> ${t.difficulty}</div>
             <div>
               <button class="btn btn-sm btn-primary explore-btn" data-id="${t.id}">Explore</button>
-              <a class="btn btn-sm btn-outline-light ms-2" href="${t.video}" target="_blank">Watch</a>
+              <button class="btn btn-sm btn-outline-light ms-2 watch-btn" data-video="${t.videoId}">Watch</button>
             </div>
           </div>
         </div>
@@ -71,6 +72,10 @@ function renderTutorials(){
   // attach listeners
   document.querySelectorAll('.explore-btn').forEach(b=>b.addEventListener('click', (ev)=>{
     const id = ev.currentTarget.dataset.id; openTutorialModal(id);
+  }));
+  
+  document.querySelectorAll('.watch-btn').forEach(b=>b.addEventListener('click', (ev)=>{
+    const vid = ev.currentTarget.dataset.video; openVideoModal(vid);
   }));
 }
 
@@ -89,13 +94,38 @@ function openTutorialModal(id){
         <h6>Resources</h6>
         <ul>${t.resources.map(r=>`<li><a href="${r.url}" target="_blank">${r.label}</a></li>`).join('')}</ul>
         <div class="mt-3">
-          <a class="btn btn-primary me-2" href="${t.video}" target="_blank">Watch Intro</a>
+          <button class="btn btn-primary me-2 watch-btn-modal" data-video="${t.videoId}">Watch Intro</button>
           <button class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>`;
+    
+  // Attach listener to the watch button inside modal
+  detail.querySelector('.watch-btn-modal').addEventListener('click', (e) => {
+      // Close tutorial modal first? Or stack? Let's stack or close. 
+      // Bootstrap modals handle stacking okay, but let's close current and open video.
+      // Actually, let's just open video modal on top.
+      const vid = e.currentTarget.dataset.video;
+      openVideoModal(vid);
+  });
+
   const modal = new bootstrap.Modal(document.getElementById('tutorialModal'));
   modal.show();
+}
+
+function openVideoModal(videoId) {
+    const frame = document.getElementById('videoFrame');
+    if(frame) {
+        frame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+        const modalEl = document.getElementById('videoModal');
+        const modal = new bootstrap.Modal(modalEl);
+        modal.show();
+        
+        // Stop video when modal closes
+        modalEl.addEventListener('hidden.bs.modal', () => {
+            frame.src = '';
+        });
+    }
 }
 
 document.addEventListener('DOMContentLoaded', ()=>{

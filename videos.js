@@ -1,11 +1,25 @@
 // videos.js - manage video list, render cards and show embedded YouTube modal
 const videoList = [
-  {id:'v1',title:'Build a Modern Website with Bootstrap',url:'https://www.youtube.com/watch?v=5qap5aO4i9A',desc:'Step-by-step guide to create a responsive modern website using Bootstrap 5.'},
-  {id:'v2',title:'Python Kivy Project - Step by Step',url:'https://www.youtube.com/watch?v=2Vf1Q4eK0Zk',desc:'Create cross-platform mobile apps with Python and Kivy.'},
-  {id:'v3',title:'Termux Essentials for Beginners',url:'https://www.youtube.com/watch?v=3GwjfUFyY6M',desc:'Useful Termux commands and setup for development on Android.'},
-  {id:'v4',title:'Intro to Cybersecurity Tools',url:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',desc:'Overview of ethical tools and workflows for beginners.'},
-  {id:'v5',title:'React-like UI from Scratch',url:'https://www.youtube.com/watch?v=9bZkp7q19f0',desc:'Build a lightweight reactive UI library from scratch.'},
-  {id:'v6',title:'School Management System Demo',url:'https://www.youtube.com/watch?v=V-_O7nl0Ii0',desc:'Walkthrough of a school management web application.'}
+  {id:'v1',title:'HOW TO LEARN PROGRAMMING IN 3 MONTHS',url:'https://www.youtube.com/watch?v=jaI7EDdqNdE',desc:'Learn the roadmap to becoming a programmer in just 3 months.'},
+  {id:'v2',title:'How to Remove Frp Tecno pop 7 || FRP BYPASS',url:'https://www.youtube.com/watch?v=Kw9doycDD14',desc:'Step-by-step guide to bypass FRP on Tecno Pop 7.'},
+  {id:'v3',title:'Sweet Time With 💚',url:'https://www.youtube.com/watch?v=WW8mXgEVMUk',desc:'Enjoying some sweet moments. Check out this vlog.'},
+  {id:'v4',title:'THE MOST POWERFUL Ai in 2025',url:'https://www.youtube.com/watch?v=9xTPOjv60O4',desc:'Exploring the most powerful AI tools and trends coming in 2025.'},
+  {id:'v5',title:'Kedre Tech Channel Intro',url:'https://www.youtube.com/watch?v=kAQg0Ckl6pA',desc:'Welcome to Kedre Tech! Here is what our channel is all about.'},
+  {id:'v6',title:'Village Life Vlog',url:'https://www.youtube.com/watch?v=ZrIQ-IOIfoI',desc:'A glimpse into village life. Relaxing and authentic content.'},
+  {id:'v7',title:'Silte Ethiopia',url:'https://www.youtube.com/watch?v=QnrMJUGdDX8',desc:'Exploring the culture and beauty of Silte, Ethiopia.'},
+  {id:'v8',title:'Kedre Tech Update',url:'https://www.youtube.com/watch?v=nM0S_fB46TQ',desc:'Latest updates and news from Kedre Tech.'},
+  {id:'v9',title:'LEARN. PRACTICE. BUILD. – Start Your Journey!',url:'https://www.youtube.com/watch?v=0koip1NoRmo',desc:'Start your programming journey today with these tips.'},
+  {id:'v10',title:'YOUR TIME IS NOW! | Motivational Tech Talk',url:'https://www.youtube.com/watch?v=KST5AK3NEUs',desc:'Motivational talk for developers, creators, and dreamers.'},
+  {id:'v11',title:'Kedre Tech Shorts',url:'https://www.youtube.com/watch?v=REvBFK38AiU',desc:'Quick tips and tech highlights.'},
+  {id:'v12',title:'AI NEWS JULY 2025 | GPT-5.5 & More',url:'https://www.youtube.com/watch?v=PKhM423sz_M',desc:'Latest AI news: GPT-5.5, Google Gemini, regulations, and more.'},
+  {id:'v13',title:'Top 5 AI Tools Every Programmer MUST Use',url:'https://www.youtube.com/watch?v=PVX3AqWCTRw',desc:'Essential AI tools to boost your programming productivity.'},
+  {id:'v14',title:'What is a Server? | Simple Explanation',url:'https://www.youtube.com/watch?v=qjjmcF-d2s4',desc:'Simple explanation of what a server is, with examples.'},
+  {id:'v15',title:'How to Host Your Code Online for Free',url:'https://www.youtube.com/watch?v=WqEH_uzrpq4',desc:'Step-by-step guide to hosting code on GitHub, Netlify, and Replit.'},
+  {id:'v16',title:'What is a Database? | Simple Explanation',url:'https://www.youtube.com/watch?v=Rx3sfLEeVro',desc:'Understanding databases: simple explanation for beginners.'},
+  {id:'v17',title:'Start Learn Programming Today',url:'https://www.youtube.com/watch?v=i2GV9nLTN0U',desc:'Why and how you should start learning programming today.'},
+  {id:'v18',title:'Kedre Tech Live',url:'https://www.youtube.com/watch?v=AZSM2QrlA34',desc:'Live session and Q&A with Kedre Tech.'},
+  {id:'v19',title:'Create a Website on Your Phone!',url:'https://www.youtube.com/watch?v=fTE-1o_7Gwk',desc:'Build a website using ChatGPT, Grok AI, and Acode on your phone.'},
+  {id:'v20',title:'Write Code Without Getting Bored',url:'https://www.youtube.com/watch?v=HMMEHc1aTLg',desc:'Fun and easy coding tips to keep you motivated.'}
 ];
 
 function getYoutubeId(url){
