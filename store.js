@@ -6,19 +6,19 @@ const products = [
   // Samsung
   {
     id: 's24u', category: 'phone', brand: 'samsung', title: 'Samsung Galaxy S24 Ultra', price: '$1299',
-    img: 'assets/s24ultra.svg', // Placeholder path
+    img: 'assets/sam.webp', // Placeholder path
     specs: { display: '6.8" QHD+ AMOLED', processor: 'Snapdragon 8 Gen 3', ram: '12GB', storage: '256GB/512GB', camera: '200MP Main', battery: '5000mAh' },
     desc: 'The ultimate Galaxy experience with AI features and S-Pen.'
   },
   {
     id: 's23fe', category: 'phone', brand: 'samsung', title: 'Samsung Galaxy S23 FE', price: '$599',
-    img: 'assets/s23fe.svg',
+    img: 'assets/iph.webp',
     specs: { display: '6.4" FHD+ AMOLED', processor: 'Exynos 2200', ram: '8GB', storage: '128GB', camera: '50MP Main', battery: '4500mAh' },
     desc: 'Flagship features at an affordable price point.'
   },
   {
     id: 'a55', category: 'phone', brand: 'samsung', title: 'Samsung Galaxy A55', price: '$479',
-    img: 'assets/a55.svg',
+    img: 'assets/app.webp',
     specs: { display: '6.6" FHD+ AMOLED', processor: 'Exynos 1480', ram: '8GB', storage: '128GB', camera: '50MP Main', battery: '5000mAh' },
     desc: 'Premium design with metal frame and awesome security.'
   },
@@ -26,13 +26,13 @@ const products = [
   // Apple
   {
     id: 'ip15pm', category: 'phone', brand: 'apple', title: 'iPhone 15 Pro Max', price: '$1199',
-    img: 'assets/ip15pm.svg',
+    img: 'assets/red.webp',
     specs: { display: '6.7" Super Retina XDR', processor: 'A17 Pro', ram: '8GB', storage: '256GB', camera: '48MP Main', battery: '4422mAh' },
     desc: 'Titanium design, powerful A17 Pro chip, and USB-C.'
   },
   {
     id: 'ip13', category: 'phone', brand: 'apple', title: 'iPhone 13', price: '$599',
-    img: 'assets/ip13.svg',
+    img: 'assets/iph.webp',
     specs: { display: '6.1" Super Retina XDR', processor: 'A15 Bionic', ram: '4GB', storage: '128GB', camera: '12MP Dual', battery: '3227mAh' },
     desc: 'Still a powerhouse with great cameras and battery life.'
   },
@@ -40,13 +40,13 @@ const products = [
   // Tecno
   {
     id: 'camon30', category: 'phone', brand: 'tecno', title: 'Tecno Camon 30 Premier', price: '$450',
-    img: 'assets/camon30.svg',
+    img: 'assets/inf.webp',
     specs: { display: '6.77" LTPO AMOLED', processor: 'Dimensity 8200', ram: '12GB', storage: '512GB', camera: '50MP Sony IMX890', battery: '5000mAh' },
     desc: 'Master of photography with dual-chip imaging system.'
   },
   {
     id: 'spark20', category: 'phone', brand: 'tecno', title: 'Tecno Spark 20 Pro+', price: '$220',
-    img: 'assets/spark20.svg',
+    img: 'assets/inf.webp',
     specs: { display: '6.78" FHD+ AMOLED', processor: 'Helio G99', ram: '8GB', storage: '256GB', camera: '108MP Main', battery: '5000mAh' },
     desc: 'Curved screen elegance on a budget.'
   },
@@ -54,13 +54,13 @@ const products = [
   // Infinix
   {
     id: 'note40', category: 'phone', brand: 'infinix', title: 'Infinix Note 40 Pro', price: '$300',
-    img: 'assets/note40.svg',
+    img: 'assets/app.webp',
     specs: { display: '6.78" FHD+ AMOLED', processor: 'Dimensity 7020', ram: '8GB', storage: '256GB', camera: '108MP OIS', battery: '5000mAh' },
     desc: 'All-round fast charging with MagCharge support.'
   },
   {
     id: 'hot40', category: 'phone', brand: 'infinix', title: 'Infinix Hot 40 Pro', price: '$180',
-    img: 'assets/hot40.svg',
+    img: 'assets/sam.webp',
     specs: { display: '6.78" FHD+ LCD 120Hz', processor: 'Helio G99', ram: '8GB', storage: '128GB', camera: '108MP Main', battery: '5000mAh' },
     desc: 'Gaming performance for budget gamers.'
   },
@@ -68,7 +68,7 @@ const products = [
   // Xiaomi / Redmi
   {
     id: 'rn13', category: 'phone', brand: 'xiaomi', title: 'Redmi Note 13 Pro+', price: '$400',
-    img: 'assets/rn13.svg',
+    img: 'assets/red.webp',
     specs: { display: '6.67" 1.5K AMOLED', processor: 'Dimensity 7200 Ultra', ram: '12GB', storage: '512GB', camera: '200MP OIS', battery: '5000mAh' },
     desc: 'Flagship killer with IP68 rating and 120W charging.'
   },
@@ -76,7 +76,7 @@ const products = [
   // Google
   {
     id: 'pixel8pro', category: 'phone', brand: 'google', title: 'Google Pixel 8 Pro', price: '$999',
-    img: 'assets/pixel8pro.svg',
+    img: 'assets/app.webp',
     specs: { display: '6.7" LTPO OLED', processor: 'Google Tensor G3', ram: '12GB', storage: '128GB', camera: '50MP Main', battery: '5050mAh' },
     desc: 'The most advanced Pixel cameras and Google AI.'
   },
@@ -84,7 +84,7 @@ const products = [
   // OnePlus
   {
     id: 'op12', category: 'phone', brand: 'oneplus', title: 'OnePlus 12', price: '$799',
-    img: 'assets/op12.svg',
+    img: 'assets/inf.webp',
     specs: { display: '6.82" 2K ProXDR', processor: 'Snapdragon 8 Gen 3', ram: '16GB', storage: '512GB', camera: '50MP Hasselblad', battery: '5400mAh' },
     desc: 'Smooth beyond belief with massive battery life.'
   },
@@ -92,7 +92,7 @@ const products = [
   // Sony
   {
     id: 'xperia1v', category: 'phone', brand: 'sony', title: 'Sony Xperia 1 V', price: '$1399',
-    img: 'assets/xperia1v.svg',
+    img: 'assets/sam.webp',
     specs: { display: '6.5" 4K HDR OLED', processor: 'Snapdragon 8 Gen 2', ram: '12GB', storage: '256GB', camera: 'Exmor T for Mobile', battery: '5000mAh' },
     desc: 'Next-gen sensor. Next-gen imaging. For creators.'
   },
@@ -100,7 +100,7 @@ const products = [
   // Asus
   {
     id: 'rog8', category: 'phone', brand: 'asus', title: 'Asus ROG Phone 8', price: '$1099',
-    img: 'assets/rog8.svg',
+    img: 'assets/app.webp',
     specs: { display: '6.78" 165Hz AMOLED', processor: 'Snapdragon 8 Gen 3', ram: '16GB', storage: '512GB', camera: '50MP Gimbal OIS', battery: '5500mAh' },
     desc: 'Beyond gaming. A premium daily driver.'
   },
@@ -108,19 +108,19 @@ const products = [
   // --- COMPUTERS ---
   {
     id: 'mbp14', category: 'computer', brand: 'apple', title: 'MacBook Pro 14"', price: '$1599',
-    img: 'assets/mbp14.svg',
+    img: 'assets/red.webp',
     specs: { display: '14.2" Liquid Retina XDR', processor: 'M3 Pro', ram: '18GB', storage: '512GB SSD', battery: '18 Hours' },
     desc: 'Mind-blowing performance for pros.'
   },
   {
     id: 'xps13', category: 'computer', brand: 'dell', title: 'Dell XPS 13', price: '$1299',
-    img: 'assets/xps13.svg',
+    img: 'assets/inf.webp',
     specs: { display: '13.4" FHD+', processor: 'Intel Core Ultra 7', ram: '16GB', storage: '512GB SSD', battery: '12 Hours' },
     desc: 'Iconic design, now even more powerful.'
   },
   {
     id: 'hpvictus', category: 'computer', brand: 'hp', title: 'HP Victus 15', price: '$850',
-    img: 'assets/victus.svg',
+    img: 'assets/sam.webp',
     specs: { display: '15.6" FHD 144Hz', processor: 'Intel Core i5-13420H', ram: '8GB', storage: '512GB SSD', gpu: 'RTX 3050' },
     desc: 'Solid gaming performance without breaking the bank.'
   }
