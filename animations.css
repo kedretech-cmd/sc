@@ -1,11 +1,32 @@
 /* extra animations & neon effects */
 .typewriter{color:var(--accent-2);font-weight:600}
-.glass-card h2{color:#e6fbff}
+.glass-card h2 {
+  color: var(--text);
+}
 
 /* subtle floating shapes */
-.shape{position:absolute;border-radius:50%;opacity:0.08;filter:blur(14px)}
-.shape.a{width:220px;height:220px;left:-60px;top:10%;background:radial-gradient(circle,#00f6ff 0%, transparent 60%)}
-.shape.b{width:160px;height:160px;right:-60px;bottom:10%;background:radial-gradient(circle,#00d1ff 0%, transparent 60%)}
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.08;
+  filter: blur(14px);
+}
+
+.shape.a {
+  width: 220px;
+  height: 220px;
+  left: -60px;
+  top: 10%;
+  background: radial-gradient(circle, var(--accent) 0%, transparent 60%);
+}
+
+.shape.b {
+  width: 160px;
+  height: 160px;
+  right: -60px;
+  bottom: 10%;
+  background: radial-gradient(circle, var(--accent-2) 0%, transparent 60%);
+}
 
 /* responsive small */
 @media (max-width:575px){

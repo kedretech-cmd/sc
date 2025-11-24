@@ -1,17 +1,26 @@
 // theme.js - dark/light toggle persisted in localStorage
 const themeToggle = document.getElementById('themeToggle');
-function applyTheme(t){
-  if(t==='dark'){
-    document.documentElement.style.setProperty('--bg','#071326');
+
+function applyTheme(t) {
+  if (t === 'dark') {
     document.body.classList.remove('light-mode');
-    themeToggle.innerHTML='<i class="bi bi-moon-fill"></i>';
+    themeToggle.innerHTML = '<i class="bi bi-moon-fill"></i>';
+    themeToggle.setAttribute('aria-label', 'Switch to light mode');
   } else {
-    document.documentElement.style.setProperty('--bg','#f7fbff');
     document.body.classList.add('light-mode');
-    themeToggle.innerHTML='<i class="bi bi-sun-fill"></i>';
+    themeToggle.innerHTML = '<i class="bi bi-sun-fill"></i>';
+    themeToggle.setAttribute('aria-label', 'Switch to dark mode');
   }
-  localStorage.setItem('kedre_theme',t);
+  localStorage.setItem('kedre_theme', t);
 }
+
 // load
-const saved = localStorage.getItem('kedre_theme')||'dark'; applyTheme(saved);
-themeToggle.addEventListener('click', ()=> applyTheme(localStorage.getItem('kedre_theme')==='dark' ? 'light' : 'dark'));
+const saved = localStorage.getItem('kedre_theme') || 'dark';
+applyTheme(saved);
+
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    const current = localStorage.getItem('kedre_theme') || 'dark';
+    applyTheme(current === 'dark' ? 'light' : 'dark');
+  });
+}
